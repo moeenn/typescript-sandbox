@@ -5,10 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsc-watch --onSuccess \"node build/index.js\"",
-    "build": "tsc",
+    "build": "npx tsc",
     "start": "node build/index.js",
-    "test": "./node_modules/.bin/jest",
-    "lint": "node_modules/.bin/eslint . --ext .ts"
+    "test": "npx jest",
+    "lint": "npx eslint . --ext .ts"
   },
   "_moduleAliases": {
     "@src": "build"

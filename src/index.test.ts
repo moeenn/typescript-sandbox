@@ -1,7 +1,10 @@
 import { main } from "./index"
 
 describe("hello message", () => {
-  it("prints out hello message", () => {
-    expect(main()).toBe("Hello world")
+  it("returns hello message", () => {
+    const expected = "Hello world"
+    const got = main()
+    
+    expect(got).toBe(expected)
   })
 })
