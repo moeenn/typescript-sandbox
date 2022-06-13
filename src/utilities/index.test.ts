@@ -1,4 +1,5 @@
-import { add } from "@src/utilities"
+import { add } from "@/utilities"
+import { describe, it, expect } from "vitest"
 
 describe("check math functions", () => {
   it("add function", () => {

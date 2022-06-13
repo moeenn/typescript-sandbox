@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "outDir": "build",
     "paths": {
-      "@src/*": ["src/*"]
+      "@/*": ["src/*"]
     }
   }
 }
