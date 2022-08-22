@@ -1,5 +1,5 @@
-import { main } from "."
 import { describe, it, expect } from "vitest"
+import { main } from "."
 
 describe("hello message", () => {
   it("returns hello message", () => {
