@@ -7,12 +7,43 @@
     "build": "npx tsc",
     "start": "NODE_ENV=production node build/index.js",
     "test": "npx vitest",
-    "lint": "npx eslint . --ext .ts",
+    "lint": "npx eslint ./src/ --ext .ts",
     "format": "npx prettier --write 'src/**/*.ts'",
     "check": "npm run format && npm run lint"    
   },
   "_moduleAliases": {
     "@": "build"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "quotes": [
+        2,
+        "double",
+        {
+          "allowTemplateLiterals": true,
+          "avoidEscape": true
+        }
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": false,
+    "tabWidth": 2,
+    "trailingComma": "all"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
