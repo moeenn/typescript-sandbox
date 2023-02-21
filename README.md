@@ -5,7 +5,6 @@ A Typescript sandbox with following tools already setup
 - ```eslint``` for static analysis and linting
 - ```vitest``` for testing
 - Some basic ```package.json``` scripts
-- Git pre-commit hooks with `husky`
 
 ## Setup
 ```bash
