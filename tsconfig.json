@@ -3,7 +3,7 @@
 		"strict": true,
     "strictFunctionTypes": true,
     "incremental": true,
-    "module": "ES6",
+    "module": "CommonJS",
     "target": "es2018",
     "moduleResolution": "node",
     "emitDecoratorMetadata": false,
