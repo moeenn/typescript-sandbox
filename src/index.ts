@@ -1,4 +1,4 @@
-import "module-alias/register"
+import "module-alias/register.js"
 
 export async function main(): Promise<string> {
   const message = "Hello world"
