@@ -1,4 +1,4 @@
-# ts-sandbox
+# Typescript Sandbox
 A Typescript sandbox with following tools already setup
 - Typescript compiler i.e. ```tsc```
 - Absolute imports with `module-alias`
