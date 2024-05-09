@@ -1,9 +1,9 @@
 # Typescript Sandbox
 A Typescript sandbox with following tools already setup
-- Typescript compiler i.e. ```tsc```
-- Absolute imports with `module-alias`
+- Typescript for type-checking i.e. ```tsc```
+- ```swc``` for code compilation
 - ```eslint``` for static analysis and linting
-- ```vitest``` for testing
+- ```jest``` for testing
 - Some basic ```package.json``` scripts
 
 ## Setup
@@ -28,7 +28,7 @@ $ npm run start
 $ npm run lint
 ```
 
-## Running Tests with Vitest
+## Running Tests with Jest
 ```bash
 $ npm run test
 ```
