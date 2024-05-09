@@ -1,5 +1,3 @@
-import "module-alias/register"
-
 import { Entity } from "@/entity/entity"
 import { Position } from "./entity/position"
 import { Direction } from "@/direction"
@@ -12,9 +10,8 @@ export async function main(): Promise<string> {
     e.move(Direction.Down)
   }
 
-  const position = e.position.serialize()
-  console.log(position)
-  return position
+  console.log(e.position)
+  return e.position.toString()
 }
 
 main().catch(console.error)

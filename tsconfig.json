@@ -1,22 +1,26 @@
 {
   "compilerOptions": {
-	"strict": true,
-    "strictFunctionTypes": true,
-    "incremental": true,
-    "module": "CommonJS",
-    "target": "es2018",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": false,
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
+    "target": "es2020",
+    "module": "es2020",
+    "allowJs": true,
     "removeComments": true,
-    "sourceMap": false,
-    "baseUrl": ".",
-    "outDir": "build",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "lib": ["es2020"],
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./*"]
     }
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/node_modules/**"]
 }

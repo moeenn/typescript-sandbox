@@ -7,7 +7,7 @@ export class Position {
     this.y = y
   }
 
-  serialize(): string {
+  toString(): string {
     return `(${this.x}, ${this.y})`
   }
 }
